@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 
-/*
-  This component sends POST /api/shorten to backend at http://localhost:5000
-  and displays the returned shortUrl.
-  If you host backend elsewhere, change API_BASE.
-*/
-const API_BASE = "http://localhost:5000";
+const API_BASE = "https://url-shortner-1-73j8.onrender.com";
 
 export default function UrlShortener() {
   const [longUrl, setLongUrl] = useState("");
@@ -42,9 +37,7 @@ export default function UrlShortener() {
       }
     } catch (err) {
       console.error("Fetch error:", err);
-      setError(
-        "Could not connect to server. Make sure backend is running on http://localhost:5000"
-      );
+      setError("Could not connect to server.");
     } finally {
       setLoading(false);
     }

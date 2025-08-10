@@ -15,15 +15,20 @@ export default function Shorturl() {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/shorten", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ longUrl }),
-      });
+      const res = await fetch(
+        "https://url-shortner-1-73j8.onrender.com/api/shorten",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ longUrl }),
+        }
+      );
 
       const data = await res.json();
       if (res.ok) {
-        setShortUrl(`http://localhost:5000/${data.shortCode}`);
+        setShortUrl(
+          `https://url-shortner-1-73j8.onrender.com/${data.shortCode}`
+        );
       } else {
         setError(data.error || "Something went wrong");
       }
