@@ -102,6 +102,7 @@ button:disabled {
   margin-top: 8px;
   color: var(--muted);
   font-size: 13px;
+  overflow: auto;
 }
 
 .hint {
