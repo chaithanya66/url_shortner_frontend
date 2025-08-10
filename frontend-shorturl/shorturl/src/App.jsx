@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const API_BASE = "https://url-shortner-1-73j8.onrender.com";
+const API_BASE =
+  import.meta.env.VITE_API_BASE || "https://url-shortner-1-73j8.onrender.com";
 
 export default function UrlShortener() {
   const [longUrl, setLongUrl] = useState("");
@@ -70,7 +71,7 @@ export default function UrlShortener() {
           />
           <br />
           <button type="submit" disabled={loading}>
-            {loading ? "Creating..." : "Create short URL"}
+            {loading ? "Creating" : "Create short URL"}
           </button>
         </form>
 
