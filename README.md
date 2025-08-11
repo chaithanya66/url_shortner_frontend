@@ -1,13 +1,17 @@
 # 🔗 URL Shortener – Frontend
 
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-orange)
+
 This is the **frontend** for a URL Shortener application, built using **React**.  
 It allows users to submit a long URL and get back a shortened URL for easy sharing and tracking.
 
 ---
 
 ## 🚀 Live Demo
-[🔗 View Live App](https://your-deployment-link.com)  
-*(Replace with actual link once deployed)*
+[🔗 View Live App](https://shorturl-826q.onrender.com)  
 
 ---
 
@@ -23,3 +27,8 @@ It allows users to submit a long URL and get back a shortened URL for easy shari
 ## 🛠️ Tech Stack
 - **React.js** – Frontend framework
 - **CSS / TailwindCSS** – Styling
+- **Axios** – API calls
+
+---
+
+## 📂 Project Structure
